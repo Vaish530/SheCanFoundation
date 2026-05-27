@@ -358,53 +358,5 @@ function initPremiumBackground() {
         <div class="bg-blob-new blob-gold"></div>
         <div class="bg-blob-new blob-blush"></div>
         <div class="bg-blob-new blob-cream"></div>
-        <div class="particle-container" id="particleContainer"></div>
     `;
-    
-    const container = document.getElementById('particleContainer');
-    if (!container) return;
-    
-    // Create floating gold particles
-    const particleCount = 18;
-    for (let i = 0; i < particleCount; i++) {
-        const particle = document.createElement('div');
-        particle.className = 'gold-particle';
-        
-        // Random size from 3px to 8px
-        const size = Math.random() * 5 + 3;
-        particle.style.width = `${size}px`;
-        particle.style.height = `${size}px`;
-        
-        // Random horizontal position
-        particle.style.left = `${Math.random() * 100}%`;
-        
-        // Random speed (animation duration)
-        const duration = Math.random() * 15 + 15; // 15s to 30s
-        particle.style.animationDuration = `${duration}s`;
-        
-        // Random delay
-        particle.style.animationDelay = `${Math.random() * -20}s`;
-        
-        // Random initial vertical position (so they start spread out on load)
-        particle.style.top = `${Math.random() * 100}%`;
-        
-        container.appendChild(particle);
-    }
-    
-    // Create glitter sparkles
-    const sparkleCount = 8;
-    for (let i = 0; i < sparkleCount; i++) {
-        const sparkle = document.createElement('div');
-        sparkle.className = 'glitter-sparkle';
-        
-        // Random positioning
-        sparkle.style.left = `${Math.random() * 90 + 5}%`;
-        sparkle.style.top = `${Math.random() * 90 + 5}%`;
-        
-        // Random animation duration and delay
-        sparkle.style.animationDuration = `${Math.random() * 4 + 4}s`; // 4s to 8s
-        sparkle.style.animationDelay = `${Math.random() * -8}s`;
-        
-        container.appendChild(sparkle);
-    }
 }
