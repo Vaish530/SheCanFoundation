@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <script>
+        const savedTheme = localStorage.getItem('theme') || 'dark';
+        document.documentElement.setAttribute('data-theme', savedTheme);
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Story | She Can Foundation</title>
+    <meta name="description" content="Discover the inspiring journey, mission, and founders of She Can Foundation, dedicated to empowering women and creating social transformation.">
+    <!-- Favicon (Circular Logo) -->
+    <link rel="icon" type="image/jpeg" href="https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=32,h=32,fit=crop,f=png/Aq2NJ23MzBH2rx2j/she-A0x4keRWN9FkzVg3.jpg">
+    <link rel="apple-touch-icon" href="https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=180,h=180,fit=crop,f=png/Aq2NJ23MzBH2rx2j/she-A0x4keRWN9FkzVg3.jpg">
+    
+    <!-- CSS files -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/animations.css">
+    
+    <!-- Google Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Drifting Glassmorphic Background Blobs -->
+    <div class="blob-container">
+        <div class="bg-blob blob-1"></div>
+        <div class="bg-blob blob-2"></div>
+        <div class="bg-blob blob-3"></div>
+        <div class="bg-blob blob-4"></div>
+    </div>
+
+    <!-- GLOBAL NAVBAR -->
+    <header class="header scrolled" id="header" style="background-color: var(--navbar-bg); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); border-bottom: 1px solid var(--glass-border);">
+        <div class="container nav-container">
+            <a href="index.html" class="logo" id="logoLink">
+                <div class="logo-frame">
+                    <img src="https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=180,h=180,fit=crop,f=png/Aq2NJ23MzBH2rx2j/she-A0x4keRWN9FkzVg3.jpg" alt="She Can Foundation Logo" style="width: 100%; height: 100%; object-fit: cover;">
+                </div>
+                <span style="font-size: 2.0rem; font-size: clamp(1.4rem, 2.5vw, 2.0rem); font-weight: 800; white-space: nowrap;">She Can Foundation</span>
+            </a>
+
+            <nav class="nav-links" id="navLinks">
+                <a href="index.html" id="navHome">Home</a>
+                <a href="about.html" class="active" id="navAbout">Our Story</a>
+                <a href="initiatives.html" id="navInitiatives">Campaigns</a>
+                <a href="donate.html" id="navDonate">Donate</a>
+                <a href="join.html" id="navJoin">Join Us</a>
+            </nav>
+
+            <div class="nav-actions">
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode" id="themeToggleBtn">
+                    <svg class="sun-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364-6.364l-.707.707M6.343 17.657l-.707.707m2.828 0l-.707-.707M17.657 6.343l-.707-.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
+                    </svg>
+                    <svg class="moon-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
+                    </svg>
+                </button>
+                <a href="donate.html" class="btn btn-red btn-header" id="headerCtaBtn">Donate Now</a>
+                
+                <div class="mobile-nav-toggle" id="mobileNavToggle" aria-label="Menu menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- ABOUT HERO INTRO -->
+    <section class="section-padding" style="padding-top: 220px; text-align: center;">
+        <div class="container" style="max-width: 800px;">
+            <span class="card-tag tag-violet reveal-scale">The She Can Story</span>
+            <h1 class="reveal-scale delay-100" style="font-size: 3rem; font-size: clamp(2rem, 5vw, 3.5rem); margin: 16px 0 24px;">
+                Empowering Women & <span class="text-gradient">Transforming Lives</span>
+            </h1>
+            <p class="reveal-scale delay-200" style="font-size: 1.15rem; line-height: 1.8;">
+                We are She Can Foundation, a government-registered non-governmental organization dedicated to breaking down societal barriers and creating a more equitable society.
+            </p>
+        </div>
+    </section>
+
+    <!-- STORY DETAILS SECTION -->
+    <section class="section-padding" style="background-color: rgba(99, 102, 241, 0.02); border-y: 1px solid var(--glass-border);">
+        <div class="container" style="display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 50px; align-items: center;">
+            <div class="reveal-left">
+                <div class="glass-card" style="margin-bottom: 24px;">
+                    <span class="card-tag tag-red">How It Started</span>
+                    <h2 style="font-size: 1.8rem; margin: 12px 0 16px;">Our Genesis</h2>
+                    <p style="font-size: 0.95rem; line-height: 1.7; margin-bottom: 16px;">
+                        She Can Foundation was founded by a group of individuals who shared a common vision of creating a world where every woman has the opportunity to thrive and succeed. The idea for the organization was born out of a desire to make a real difference in the lives of women in communities across the globe.
+                    </p>
+                    <p style="font-size: 0.95rem; line-height: 1.7;">
+                        We recognized that there are countless barriers that prevent women from reaching their full potential, and we wanted to create an organization that could help break down those barriers and provide women with the resources and support they need to succeed. With a shared passion and a determination to create positive change, we set out to make our vision a reality, and She Can Foundation was born.
+                    </p>
+                </div>
+            </div>
+            
+            <!-- Graphic Image Wrapper showing founder/camps -->
+            <div class="reveal-right">
+                <div class="glass-card" style="padding: 16px; background-color: var(--glass-bg);">
+                    <div style="border-radius: var(--border-radius-md); overflow: hidden; border: 1px solid var(--glass-border); width: 100%; height: 320px;">
+                        <img src="https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1024,h=1286,fit=crop/Aq2NJ23MzBH2rx2j/1__4__1620906612-AR0eoXKMlXF3kDQ5.jpg" alt="She Can Foundation distribution camp" style="width: 100%; height: 100%; object-fit: cover;">
+                    </div>
+                    <div style="margin-top: 16px; text-align: center;">
+                        <p style="font-size: 0.8rem; color: var(--text-muted); font-style: italic;">On-ground awareness and resource camps in rural districts.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CORE MISSION STATEMENT -->
+    <section class="section-padding">
+        <div class="container" style="display: grid; grid-template-columns: 0.9fr 1.1fr; gap: 50px; align-items: center;">
+            <div class="reveal-left">
+                <div class="glass-card" style="padding: 16px; background-color: var(--glass-bg);">
+                    <div style="border-radius: var(--border-radius-md); overflow: hidden; border: 1px solid var(--glass-border); width: 100%; height: 320px;">
+                        <img src="https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1440,h=1959,fit=crop/Aq2NJ23MzBH2rx2j/1682903599444-m5KPBaLG4LiW4P7B.jpg" alt="Girls holding books and hygiene kits" style="width: 100%; height: 100%; object-fit: cover;">
+                    </div>
+                </div>
+            </div>
+            
+            <div class="reveal-right">
+                <div class="glass-card">
+                    <span class="card-tag tag-gold">What is She Can?</span>
+                    <h2 style="font-size: 1.8rem; margin: 12px 0 16px;">Our Mission & Approach</h2>
+                    <p style="font-size: 0.95rem; line-height: 1.7; margin-bottom: 16px;">
+                        She Can Foundation is a non-profit organization dedicated to empowering women and creating a more equitable society. We provide support, resources, and training to women in communities across the globe, working closely with local organizations, governments, and communities to ensure that our programs are effective and sustainable.
+                    </p>
+                    <p style="font-size: 0.95rem; line-height: 1.7;">
+                        Through advocacy campaigns and initiatives, we raise awareness of women's issues. We believe that every woman deserves the opportunity to thrive and succeed, regardless of her background or circumstances, and we work tirelessly to create a world where that is possible. We invite you to join us in our mission to create a better future.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TEAM / FOUNDER PROFILE -->
+    <section class="section-padding" style="background-color: rgba(245, 158, 11, 0.01); border-top: 1px solid var(--glass-border);">
+        <div class="container">
+            <div class="reveal-scale text-center" style="text-align: center; max-width: 600px; margin: 0 auto 50px;">
+                <h2 style="font-size: 2.2rem; margin-bottom: 16px;">Leadership <span class="text-gradient">& Founders</span></h2>
+                <p>Meet the visionary leadership steering our community outreach and advocacy programs.</p>
+            </div>
+
+            <div style="display: flex; justify-content: center;">
+                <div class="glass-card reveal-scale" style="max-width: 500px; text-align: center; border-color: rgba(245, 158, 11, 0.3);">
+                    <div style="width: 120px; height: 120px; border-radius: 50%; border: 3px solid var(--gold); overflow: hidden; margin: 0 auto 20px;">
+                        <!-- Custom Avatar/Placeholder using generic profile or matching real image if exists -->
+                        <img src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=200&auto=format&fit=crop&q=80" alt="Reeta Mishra" style="width: 100%; height: 100%; object-fit: cover;">
+                    </div>
+                    <h3 style="font-size: 1.4rem; color: var(--text-primary); margin-bottom: 4px;">Reeta Mishra</h3>
+                    <p style="font-size: 0.9rem; color: var(--gold); font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 16px;">Founder & President</p>
+                    <p style="font-size: 0.95rem; line-height: 1.7; color: var(--text-secondary);">
+                        "Together, we can break down barriers and empower women. At She Can Foundation, we believe that if we all do our part, there is no challenge too great to overcome."
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- GLOBAL FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-info reveal">
+                    <a href="index.html" class="logo" style="margin-bottom: 16px;">
+                        <div style="width: 32px; height: 32px; border-radius: 50%; overflow: hidden; border: 1.5px solid var(--primary); display: flex; align-items: center; justify-content: center; background-color: #fff;">
+                            <img src="https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=180,h=180,fit=crop,f=png/Aq2NJ23MzBH2rx2j/she-A0x4keRWN9FkzVg3.jpg" alt="Logo" style="width:100%; height:100%; object-fit:cover;">
+                        </div>
+                        <span style="font-size: 1.5rem; font-weight: 800;">She Can Foundation</span>
+                    </a>
+                    <p style="font-size: 0.9rem;">Empowering underprivileged women and raising wellness awareness. Registered under Indian Societies Act, 1860.</p>
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/company/shecanfoundation" class="social-btn" aria-label="LinkedIn">LN</a>
+                        <a href="https://www.instagram.com/_shecanfoundation_" class="social-btn" aria-label="Instagram">IG</a>
+                    </div>
+                </div>
+
+                <div class="footer-col reveal delay-100">
+                    <h4>Navigation</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">Our Story</a></li>
+                        <li><a href="initiatives.html">Our Campaigns</a></li>
+                        <li><a href="donate.html">Donate Today</a></li>
+                        <li><a href="join.html">Be a Volunteer</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col reveal delay-200">
+                    <h4>Contact Us</h4>
+                    <ul style="font-size: 0.9rem; color: var(--text-secondary); gap: 10px;">
+                        <li><strong>Email:</strong> president@shecanfoundation.org</li>
+                        <li><strong>Contact:</strong> +91-8283841830</li>
+                        <li><strong>Reg. Act:</strong> Act XXI of 1860</li>
+                    </ul>
+                </div>
+
+                <div class="footer-col reveal delay-300">
+                    <h4>Join Newsletter</h4>
+                    <p style="font-size: 0.85rem; margin-bottom: 16px;">Get updates on hygiene distribution drives and campaigns.</p>
+                    <form class="newsletter-form" id="newsletterForm" onsubmit="event.preventDefault(); alert('Subscribed to Newsletter!'); this.reset();">
+                        <input type="email" placeholder="Your Email" class="newsletter-input" required id="newsletterEmailInput">
+                        <button type="submit" class="btn btn-primary" style="padding: 10px 20px; font-size: 0.8rem;" id="newsletterSubmitBtn">Join</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="footer-bottom reveal">
+                <p>&copy; 2026 She Can Foundation. All rights reserved.</p>
+                <p>Govt. Registered NGO | Societies Registration Act, 1860</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Core Scripts -->
+    <script src="js/main.js"></script>
+</body>
+</html>

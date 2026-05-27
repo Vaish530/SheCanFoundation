@@ -1,0 +1,18 @@
+{
+  "version": 2,
+  "builds": [
+    { "src": "api/index.js", "use": "@vercel/node" },
+    { "src": "*.html", "use": "@vercel/static" },
+    { "src": "css/**", "use": "@vercel/static" },
+    { "src": "js/**", "use": "@vercel/static" }
+  ],
+  "routes": [
+    { "src": "/api/(.*)", "dest": "/api/index.js" },
+    { "src": "/admin", "dest": "/admin.html" },
+    { "src": "/join", "dest": "/join.html" },
+    { "src": "/about", "dest": "/about.html" },
+    { "src": "/initiatives", "dest": "/initiatives.html" },
+    { "src": "/donate", "dest": "/donate.html" },
+    { "src": "/(.*)", "dest": "/$1" }
+  ]
+}

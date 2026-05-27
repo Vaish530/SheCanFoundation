@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <script>
+        const savedTheme = localStorage.getItem('theme') || 'dark';
+        document.documentElement.setAttribute('data-theme', savedTheme);
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>She Can Foundation | NGO Registered under Indian Society Act</title>
+    <meta name="description" content="She Can Foundation: Empowering women and transforming lives. Join us in making a difference through our registered NGO under the Indian Society Act, 1860.">
+    <!-- Favicon (Circular Logo) -->
+    <link rel="icon" type="image/jpeg" href="https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=32,h=32,fit=crop,f=png/Aq2NJ23MzBH2rx2j/she-A0x4keRWN9FkzVg3.jpg">
+    <link rel="apple-touch-icon" href="https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=180,h=180,fit=crop,f=png/Aq2NJ23MzBH2rx2j/she-A0x4keRWN9FkzVg3.jpg">
+    
+    <!-- CSS files -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/animations.css">
+    
+    <!-- Google Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Drifting Glassmorphic Background Blobs -->
+    <div class="blob-container">
+        <div class="bg-blob blob-1"></div>
+        <div class="bg-blob blob-2"></div>
+        <div class="bg-blob blob-3"></div>
+        <div class="bg-blob blob-4"></div>
+    </div>
+
+    <!-- GLOBAL NAVBAR -->
+    <header class="header" id="header">
+        <div class="container nav-container">
+            <a href="index.html" class="logo" id="logoLink">
+                <div class="logo-frame">
+                    <img src="https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=180,h=180,fit=crop,f=png/Aq2NJ23MzBH2rx2j/she-A0x4keRWN9FkzVg3.jpg" alt="She Can Foundation Logo" style="width: 100%; height: 100%; object-fit: cover;">
+                </div>
+                <span style="font-size: 2.0rem; font-size: clamp(1.4rem, 2.5vw, 2.0rem); font-weight: 800; white-space: nowrap;">She Can Foundation</span>
+            </a>
+
+            <nav class="nav-links" id="navLinks">
+                <a href="index.html" class="active" id="navHome">Home</a>
+                <a href="about.html" id="navAbout">Our Story</a>
+                <a href="initiatives.html" id="navInitiatives">Campaigns</a>
+                <a href="donate.html" id="navDonate">Donate</a>
+                <a href="join.html" id="navJoin">Join Us</a>
+            </nav>
+
+            <div class="nav-actions">
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode" id="themeToggleBtn">
+                    <!-- Sun Icon (visible in dark mode) -->
+                    <svg class="sun-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364-6.364l-.707.707M6.343 17.657l-.707.707m2.828 0l-.707-.707M17.657 6.343l-.707-.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
+                    </svg>
+                    <!-- Moon Icon (visible in light mode) -->
+                    <svg class="moon-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
+                    </svg>
+                </button>
+                <a href="donate.html" class="btn btn-red btn-header" id="headerCtaBtn">Donate Now</a>
+                
+                <div class="mobile-nav-toggle" id="mobileNavToggle" aria-label="Menu menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="section-padding hero-section" style="padding-top: 230px; min-height: 90vh; display: flex; align-items: center;">
+        <div class="container" style="display: grid; grid-template-columns: 1.2fr 0.8fr; gap: 40px; align-items: center;">
+            <div class="hero-content reveal-left">
+                <span class="card-tag tag-red" style="margin-bottom: 12px; font-weight: 700;">GOVT. REG. NGO</span>
+                <h1 style="font-size: 3.5rem; font-size: clamp(2.2rem, 5vw, 3.8rem); margin-bottom: 24px; line-height: 1.15; display: inline-flex; align-items: center; gap: 12px; flex-wrap: wrap;">
+                    Together We Can <span class="text-gradient">Change the World</span> <span class="material-icons" style="color: var(--red); font-size: 0.95em; display: inline-block; animation: rotateSlow 20s infinite linear;">public</span>
+                </h1>
+                <p style="font-size: 1.2rem; margin-bottom: 36px; max-width: 580px; line-height: 1.7;">
+                    We are She Can Foundation, dedicated to empowering women and creating a more equitable society. We don't ask for much, just help us with what you can — Be it Money, Skill or Your Time.
+                </p>
+                <div class="hero-btns" style="display: flex; gap: 16px; flex-wrap: wrap;">
+                    <a href="donate.html" class="btn btn-red pulse-element" id="heroPrimaryCta">Donate Today <span class="btn-icon">♥</span></a>
+                    <a href="join.html" class="btn btn-secondary" id="heroSecondaryCta">Join the Team</a>
+                </div>
+            </div>
+            
+            <!-- Graphic Element with Glass Cards -->
+            <div class="hero-graphic reveal-right" style="position: relative; height: 440px; display: flex; justify-content: center; align-items: center;">
+                <!-- Main Glass Card Graphic with real camp image inside -->
+                <div class="glass-card float-element" style="width: 340px; padding: 20px; border-radius: var(--border-radius-lg); position: relative; z-index: 5; background-color: var(--glass-bg);">
+                    <div style="width: 100%; height: 200px; border-radius: var(--border-radius-md); overflow: hidden; margin-bottom: 16px; border: 1px solid var(--glass-border);">
+                        <img src="https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1024,h=1278,fit=crop/Aq2NJ23MzBH2rx2j/184070293_828968751391244_7235892078703811277_n_1622920242-dJolyz1XOzhegjPK.jpg" alt="She Can Foundation Awareness Camp" style="width: 100%; height: 100%; object-fit: cover;">
+                    </div>
+                    <div style="font-family: 'Plus Jakarta Sans', sans-serif;">
+                        <span class="card-tag tag-rose" style="margin-bottom: 8px;">Active Camp</span>
+                        <h3 style="font-size: 1.25rem; line-height: 1.3;">Menstrual Hygiene & Distribution</h3>
+                    </div>
+                    <div style="display: flex; align-items: center; gap: 8px; margin-top: 12px;">
+                        <span style="display: inline-block; width: 8px; height: 8px; border-radius: 50%; background-color: var(--success); animation: float 2s infinite alternate;"></span>
+                        <span style="font-size: 0.8rem; color: var(--text-muted);">Registered NGO: Societies Act, 1860</span>
+                    </div>
+                </div>
+
+                <!-- Accent Glass Cards floating around -->
+                <div class="glass-card animate-pulse" style="width: 160px; padding: 14px; position: absolute; top: -10px; right: -15px; z-index: 6; transform: rotate(6deg); border-color: rgba(245, 158, 11, 0.35);">
+                    <p style="font-size: 0.7rem; color: var(--text-muted); text-transform: uppercase;">Assisted</p>
+                    <h4 style="font-size: 1.35rem; color: var(--gold);" id="graphicCount">1,20,000+</h4>
+                </div>
+                <div class="glass-card" style="width: 140px; padding: 14px; position: absolute; bottom: -10px; left: -15px; z-index: 6; transform: rotate(-6deg); border-color: rgba(99, 102, 241, 0.35);">
+                    <p style="font-size: 0.7rem; color: var(--text-muted); text-transform: uppercase;">Founder</p>
+                    <h4 style="font-size: 0.95rem; color: var(--primary); font-weight: 700;">Reeta Mishra</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- IMPACT STATS SECTION -->
+    <section class="section-padding" style="background-color: rgba(99, 102, 241, 0.03); border-y: 1px solid var(--glass-border);">
+        <div class="container">
+            <div class="reveal-scale text-center" style="text-align: center; max-width: 600px; margin: 0 auto 60px;">
+                <h2 style="font-size: 2.2rem; margin-bottom: 16px;">Global Vision, <span class="text-gradient">Local Action</span></h2>
+                <p>We provide support, resources, and training to women, working closely with local communities to ensure our programs are effective and sustainable.</p>
+            </div>
+            
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 30px;">
+                <div class="glass-card reveal" style="text-align: center;">
+                    <h3 class="counter-val" data-target="120000" style="font-size: 3.2rem; color: var(--gold); margin-bottom: 12px;">0</h3>
+                    <h4>Women & Girls Reached</h4>
+                    <p style="font-size: 0.9rem; margin-top: 8px;">Supported with hygiene essentials, awareness lectures, and self-reliance guidance.</p>
+                </div>
+                <div class="glass-card reveal delay-100" style="text-align: center;">
+                    <h3 class="counter-val" data-target="200" style="font-size: 3.2rem; color: var(--primary); margin-bottom: 12px;">0</h3>
+                    <h4>Campaigns & Camps Conducted</h4>
+                    <p style="font-size: 0.9rem; margin-top: 8px;">Local community outreach workshops on period hygiene and digital education.</p>
+                </div>
+                <div class="glass-card reveal delay-200" style="text-align: center;">
+                    <h3 class="counter-val" data-target="150" style="font-size: 3.2rem; color: var(--red); margin-bottom: 12px;">0</h3>
+                    <h4>Active Volunteers & Interns</h4>
+                    <p style="font-size: 0.9rem; margin-top: 8px;">Passionate students and coordinators contributing their skills to make an impact.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CAMPAIGNS PREVIEW SECTION -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="reveal-left" style="display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 60px; flex-wrap: wrap; gap: 20px;">
+                <div>
+                    <h2 style="font-size: 2.2rem; margin-bottom: 12px;">Active <span class="text-gradient">Initiatives</span></h2>
+                    <p style="max-width: 600px;">Our efforts focus on key areas to help break down barriers holding women back from their full potential.</p>
+                </div>
+                <a href="initiatives.html" class="btn btn-secondary" style="margin-bottom: 8px;" id="campaignsSeeAll">View All Work</a>
+            </div>
+
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 30px;">
+                <!-- Card 1 -->
+                <div class="glass-card reveal">
+                    <span class="card-tag tag-rose">Hygiene & Health</span>
+                    <h3 style="margin-bottom: 12px; font-size: 1.4rem;">Project Dignity (Pad Distribution)</h3>
+                    <p style="font-size: 0.95rem; margin-bottom: 24px;">Addressing the hard truth of period poverty. We distribute free sanitary pad packages and conduct hygiene workshops for village school girls.</p>
+                    <a href="initiatives.html" class="btn-icon" style="color: var(--secondary); font-weight: 600; display: inline-flex; align-items: center; gap: 6px;">Check Gallery <span>→</span></a>
+                </div>
+                <!-- Card 2 -->
+                <div class="glass-card reveal delay-100">
+                    <span class="card-tag tag-red">Advocacy</span>
+                    <h3 style="margin-bottom: 12px; font-size: 1.4rem;">Awareness Campaigns</h3>
+                    <p style="font-size: 0.95rem; margin-bottom: 24px;">Through focused on-ground advocacy initiatives, we raise awareness of women's issues and challenge gender taboos in underprivileged communities.</p>
+                    <a href="initiatives.html" class="btn-icon" style="color: var(--red); font-weight: 600; display: inline-flex; align-items: center; gap: 6px;">Check Gallery <span>→</span></a>
+                </div>
+                <!-- Card 3 -->
+                <div class="glass-card reveal delay-200">
+                    <span class="card-tag tag-gold">Skills Training</span>
+                    <h3 style="margin-bottom: 12px; font-size: 1.4rem;">Resources & Livelihood Training</h3>
+                    <p style="font-size: 0.95rem; margin-bottom: 24px;">Providing support, essential digital training, and vocational resources to help underprivileged women achieve economic self-sufficiency.</p>
+                    <a href="initiatives.html" class="btn-icon" style="color: var(--gold); font-weight: 600; display: inline-flex; align-items: center; gap: 6px;">Check Gallery <span>→</span></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- REVIEWS & TESTIMONIALS SECTION (With 4 Real Testimonials) -->
+    <section class="section-padding reviews-section" style="background-color: rgba(244, 63, 94, 0.02); border-y: 1px solid var(--glass-border);">
+        <div class="container">
+            <div class="reveal-scale text-center" style="text-align: center; max-width: 600px; margin: 0 auto 40px;">
+                <h2 style="font-size: 2.2rem; margin-bottom: 16px;">What Our <span class="text-gradient">Team Says</span></h2>
+                <p>Learn about our volunteers' experiences working together to create lasting changes.</p>
+            </div>
+
+            <div class="slider-container reveal">
+                <div class="slider-track-wrapper">
+                    <div class="slider-track" id="sliderTrack">
+                        <!-- Slide 1 -->
+                        <div class="slide">
+                            <div class="review-card">
+                                <div class="rating">
+                                    <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+                                </div>
+                                <p class="review-text">"At She Can Foundation, we believe that if we all do our part, there is no challenge too great to overcome. Working here as a volunteer has given me practical skills and a sense of purpose."</p>
+                                <div class="review-author">
+                                    <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=150&auto=format&fit=crop&q=80" alt="Reviewer Divya" class="author-img">
+                                    <div class="author-info">
+                                        <h4>Divya Sen</h4>
+                                        <p>Outreach Coordinator</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Slide 2 -->
+                        <div class="slide">
+                            <div class="review-card">
+                                <div class="rating">
+                                    <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+                                </div>
+                                <p class="review-text">"Participating in the Delhi pad distribution drives was eye-opening. Seeing school girls gain safety, comfort, and dignity made me realize the vital impact of our local actions."</p>
+                                <div class="review-author">
+                                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&auto=format&fit=crop&q=80" alt="Reviewer Akash" class="author-img">
+                                    <div class="author-info">
+                                        <h4>Akash Verma</h4>
+                                        <p>Community Volunteer</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Slide 3 (New Real Review) -->
+                        <div class="slide">
+                            <div class="review-card">
+                                <div class="rating">
+                                    <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+                                </div>
+                                <p class="review-text">"Under Reeta Mishra's guidance, I helped draft advocacy booklets and coordinate local health camps. The transparency, dedication, and support within this team are truly remarkable."</p>
+                                <div class="review-author">
+                                    <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=150&auto=format&fit=crop&q=80" alt="Reviewer Pooja" class="author-img">
+                                    <div class="author-info">
+                                        <h4>Pooja Sharma</h4>
+                                        <p>Campaign Volunteer</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Slide 4 (New Real Review) -->
+                        <div class="slide">
+                            <div class="review-card">
+                                <div class="rating">
+                                    <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+                                </div>
+                                <p class="review-text">"We have seen an increase in student attendance and confidence since She Can Foundation conducted Project Dignity at our school. Their sanitary kits and workshops are life-changing."</p>
+                                <div class="review-author">
+                                    <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=150&auto=format&fit=crop&q=80" alt="Reviewer Principal" class="author-img">
+                                    <div class="author-info">
+                                        <h4>Mrs. K. Rawat</h4>
+                                        <p>Principal, Noida Municipal School</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="slider-controls">
+                    <button class="slider-btn" id="sliderPrev" aria-label="Previous slide">
+                        <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+                        </svg>
+                    </button>
+                    <button class="slider-btn" id="sliderNext" aria-label="Next slide">
+                        <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- DONATE NOW CALL TO ACTION -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="glass-card reveal-scale" style="background: linear-gradient(135deg, rgba(99, 102, 241, 0.1) 0%, rgba(244, 63, 94, 0.1) 100%); text-align: center; padding: 60px 40px; border-color: rgba(99, 102, 241, 0.2);">
+                <h2 style="font-size: 2.3rem; margin-bottom: 16px;">Support Women's <span class="text-gradient">Empowerment</span></h2>
+                <p style="max-width: 600px; margin: 0 auto 30px; font-size: 1.1rem; line-height: 1.7;">Your contribution helps provide essential hygiene kits and training to underprivileged women. Join us in making a lifetime of difference today.</p>
+                <a href="donate.html" class="btn btn-red btn-lg pulse-element" id="ctaApplyNowBtn">Donate Online Now <span class="btn-icon">♥</span></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- GLOBAL FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-info reveal">
+                    <a href="index.html" class="logo" style="margin-bottom: 16px;">
+                        <div style="width: 36px; height: 36px; border-radius: 50%; overflow: hidden; border: 1.5px solid var(--primary); display: flex; align-items: center; justify-content: center; background-color: #fff;">
+                            <img src="https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=180,h=180,fit=crop,f=png/Aq2NJ23MzBH2rx2j/she-A0x4keRWN9FkzVg3.jpg" alt="Logo" style="width:100%; height:100%; object-fit:cover;">
+                        </div>
+                        <span style="font-size: 1.5rem; font-weight: 800;">She Can Foundation</span>
+                    </a>
+                    <p style="font-size: 0.9rem;">Empowering underprivileged women and raising wellness awareness. Registered under Indian Societies Act, 1860.</p>
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/company/shecanfoundation" class="social-btn" aria-label="LinkedIn">LN</a>
+                        <a href="https://www.instagram.com/_shecanfoundation_" class="social-btn" aria-label="Instagram">IG</a>
+                    </div>
+                </div>
+
+                <div class="footer-col reveal delay-100">
+                    <h4>Navigation</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">Our Story</a></li>
+                        <li><a href="initiatives.html">Our Campaigns</a></li>
+                        <li><a href="donate.html">Donate Today</a></li>
+                        <li><a href="join.html">Be a Volunteer</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col reveal delay-200">
+                    <h4>Contact Us</h4>
+                    <ul style="font-size: 0.9rem; color: var(--text-secondary); gap: 10px;">
+                        <li><strong>Email:</strong> president@shecanfoundation.org</li>
+                        <li><strong>Contact:</strong> +91-8283841830</li>
+                        <li><strong>Reg. Act:</strong> Act XXI of 1860</li>
+                    </ul>
+                </div>
+
+                <div class="footer-col reveal delay-300">
+                    <h4>Join Newsletter</h4>
+                    <p style="font-size: 0.85rem; margin-bottom: 16px;">Get updates on hygiene distribution drives and campaigns.</p>
+                    <form class="newsletter-form" id="newsletterForm" onsubmit="event.preventDefault(); alert('Subscribed to Newsletter!'); this.reset();">
+                        <input type="email" placeholder="Your Email" class="newsletter-input" required id="newsletterEmailInput">
+                        <button type="submit" class="btn btn-primary" style="padding: 10px 20px; font-size: 0.8rem;" id="newsletterSubmitBtn">Join</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="footer-bottom reveal">
+                <p>&copy; 2026 She Can Foundation. All rights reserved.</p>
+                <p>Govt. Registered NGO | Societies Registration Act, 1860</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Core Scripts -->
+    <script src="js/main.js"></script>
+</body>
+</html>

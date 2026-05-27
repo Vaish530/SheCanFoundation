@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <script>
+        const savedTheme = localStorage.getItem('theme') || 'dark';
+        document.documentElement.setAttribute('data-theme', savedTheme);
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donate & Support | She Can Foundation</title>
+    <meta name="description" content="Support women's empowerment by donating to She Can Foundation. Your contribution helps keep girls in school and provides free sanitary hygiene kits.">
+    <!-- Favicon (Circular Logo) -->
+    <link rel="icon" type="image/jpeg" href="https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=32,h=32,fit=crop,f=png/Aq2NJ23MzBH2rx2j/she-A0x4keRWN9FkzVg3.jpg">
+    <link rel="apple-touch-icon" href="https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=180,h=180,fit=crop,f=png/Aq2NJ23MzBH2rx2j/she-A0x4keRWN9FkzVg3.jpg">
+    
+    <!-- CSS files -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/animations.css">
+    
+    <!-- Google Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Drifting Glassmorphic Background Blobs -->
+    <div class="blob-container">
+        <div class="bg-blob blob-1"></div>
+        <div class="bg-blob blob-2"></div>
+        <div class="bg-blob blob-3"></div>
+        <div class="bg-blob blob-4"></div>
+    </div>
+
+    <!-- GLOBAL NAVBAR -->
+    <header class="header scrolled" id="header" style="background-color: var(--navbar-bg); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); border-bottom: 1px solid var(--glass-border);">
+        <div class="container nav-container">
+            <a href="index.html" class="logo" id="logoLink">
+                <div class="logo-frame">
+                    <img src="https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=180,h=180,fit=crop,f=png/Aq2NJ23MzBH2rx2j/she-A0x4keRWN9FkzVg3.jpg" alt="She Can Foundation Logo" style="width: 100%; height: 100%; object-fit: cover;">
+                </div>
+                <span style="font-size: 2.0rem; font-size: clamp(1.4rem, 2.5vw, 2.0rem); font-weight: 800; white-space: nowrap;">She Can Foundation</span>
+            </a>
+
+            <nav class="nav-links" id="navLinks">
+                <a href="index.html" id="navHome">Home</a>
+                <a href="about.html" id="navAbout">Our Story</a>
+                <a href="initiatives.html" id="navInitiatives">Campaigns</a>
+                <a href="donate.html" class="active" id="navDonate">Donate</a>
+                <a href="join.html" id="navJoin">Join Us</a>
+            </nav>
+
+            <div class="nav-actions">
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode" id="themeToggleBtn">
+                    <svg class="sun-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364-6.364l-.707.707M6.343 17.657l-.707.707m2.828 0l-.707-.707M17.657 6.343l-.707-.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
+                    </svg>
+                    <svg class="moon-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
+                    </svg>
+                </button>
+                <a href="donate.html" class="btn btn-red btn-header" id="headerCtaBtn">Donate Now</a>
+                
+                <div class="mobile-nav-toggle" id="mobileNavToggle" aria-label="Menu menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- DONATE HEADER -->
+    <section class="section-padding" style="padding-top: 220px; text-align: center;">
+        <div class="container" style="max-width: 800px;">
+            <span class="card-tag tag-red reveal-scale">Support a Worthy Cause</span>
+            <h1 class="reveal-scale delay-100" style="font-size: 3rem; font-size: clamp(2rem, 5vw, 3.5rem); margin: 16px 0 24px;">
+                One Small Gift = A <span class="text-gradient">Lifetime of Dignity</span>
+            </h1>
+            <p class="reveal-scale delay-200" style="font-size: 1.15rem; line-height: 1.8;">
+                Your donation helps create opportunities and keep girls in school. Every contribution provides hope and support to those who need it most.
+            </p>
+        </div>
+    </section>
+
+    <!-- DONATION DETAILS & CHANNELS -->
+    <section class="section-padding" style="padding-top: 20px;">
+        <div class="container" style="display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 50px; align-items: start;">
+            <!-- Left Side: Emotional appeal and facts -->
+            <div style="display: flex; flex-direction: column; gap: 30px;">
+                <div class="glass-card reveal-left" style="border-color: rgba(244, 63, 94, 0.25);">
+                    <h2 style="font-size: 1.7rem; color: var(--secondary); margin-bottom: 20px; line-height: 1.2;">The Hard Truth</h2>
+                    <p style="font-size: 0.95rem; line-height: 1.7; margin-bottom: 16px;">
+                        Dear Donor, every month, a 13-year-old girl in a small village is forced to miss five days of school. Not because she doesn't want to learn. Not because she is lazy. But because she cannot afford something as basic as a sanitary pad. She hides at home in shame, using rags, newspapers, or sand — risking her health and dignity.
+                    </p>
+                    <ul style="display: flex; flex-direction: column; gap: 10px; font-weight: 600; font-size: 0.95rem; margin-bottom: 20px; color: var(--text-primary);">
+                        <li style="display: flex; align-items: center; gap: 8px;">
+                            <span style="color: var(--secondary);">✦</span> 1 in every 5 girls in India drops out of school because of periods.
+                        </li>
+                        <li style="display: flex; align-items: center; gap: 8px;">
+                            <span style="color: var(--secondary);">✦</span> Over 12 crore women and girls still lack access to proper hygiene.
+                        </li>
+                    </ul>
+                    <p style="font-size: 0.95rem; line-height: 1.7;">
+                        At She Can Foundation, we have already helped **1,20,000+ girls** with free sanitary pads, workshops, and dignity kits. But for every 1 girl we reach, 5 more are still waiting. Without you, she waits. With you, she rises.
+                    </p>
+                </div>
+
+                <div class="glass-card reveal-left delay-200" style="border-color: rgba(245, 158, 11, 0.25);">
+                    <h2 style="font-size: 1.7rem; color: var(--gold); margin-bottom: 20px; line-height: 1.2;">Donation Tiers</h2>
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+                        <div style="border-left: 3px solid var(--gold); padding-left: 12px;">
+                            <h4 style="font-size: 1.15rem; color: var(--gold);">₹500</h4>
+                            <p style="font-size: 0.85rem; color: var(--text-secondary);">Supplies 5 girls with sanitary pads for 1 month.</p>
+                        </div>
+                        <div style="border-left: 3px solid var(--gold); padding-left: 12px;">
+                            <h4 style="font-size: 1.15rem; color: var(--gold);">₹1,500</h4>
+                            <p style="font-size: 0.85rem; color: var(--text-secondary);">Supplies 15 girls with sanitary pads for 3 months.</p>
+                        </div>
+                        <div style="border-left: 3px solid var(--gold); padding-left: 12px;">
+                            <h4 style="font-size: 1.15rem; color: var(--gold);">₹5,000</h4>
+                            <p style="font-size: 0.85rem; color: var(--text-secondary);">Keeps 25 girls in school safe and dignified.</p>
+                        </div>
+                        <div style="border-left: 3px solid var(--gold); padding-left: 12px;">
+                            <h4 style="font-size: 1.15rem; color: var(--gold);">₹10,000</h4>
+                            <p style="font-size: 0.85rem; color: var(--text-secondary);">Keeps an entire classroom free from period shame.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Side: QR Code scan and Bank details -->
+            <div class="reveal-right">
+                <div class="glass-card" style="padding: 30px; text-align: center; border-color: rgba(99, 102, 241, 0.25);">
+                    <h2 style="font-size: 1.8rem; margin-bottom: 16px;">Donate & Scan</h2>
+                    <p style="font-size: 0.9rem; color: var(--text-secondary); margin-bottom: 24px;">Scan the official payment code or use the account credentials below to transfer funds directly to She Can Foundation.</p>
+                    
+                    <!-- Scan Poster Area -->
+                    <div style="width: 260px; height: 260px; border-radius: var(--border-radius-md); overflow: hidden; border: 2px solid var(--glass-border); margin: 0 auto 24px; padding: 10px; background-color: #fff; box-shadow: 0 4px 14px var(--glass-shadow);">
+                        <img src="https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=768,h=1224,fit=crop/Aq2NJ23MzBH2rx2j/whatsapp-image-2025-09-15-at-7.15.51-pm-YZ9EMg21V1sPzr5y.jpeg" alt="Donation QR Code scan" style="width: 100%; height: 100%; object-fit: contain;">
+                    </div>
+
+                    <!-- Bank details list -->
+                    <div style="text-align: left; background-color: rgba(99, 102, 241, 0.05); border: 1px solid var(--glass-border); border-radius: var(--border-radius-md); padding: 20px;">
+                        <h4 style="font-size: 1rem; margin-bottom: 12px; border-bottom: 1px solid var(--glass-border); padding-bottom: 6px; color: var(--primary);">Direct Bank Transfer</h4>
+                        <ul style="display: flex; flex-direction: column; gap: 8px; font-size: 0.85rem; color: var(--text-secondary);">
+                            <li><strong>Account Name:</strong> She Can Foundation</li>
+                            <li><strong>Account Number:</strong> 828384183011</li>
+                            <li><strong>IFSC Code:</strong> UTIB0000124 (Axis Bank)</li>
+                            <li><strong>UPI ID:</strong> shecanfoundation@upi</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- GLOBAL FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-info reveal">
+                    <a href="index.html" class="logo" style="margin-bottom: 16px;">
+                        <div style="width: 32px; height: 32px; border-radius: 50%; overflow: hidden; border: 1.5px solid var(--primary); display: flex; align-items: center; justify-content: center; background-color: #fff;">
+                            <img src="https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=180,h=180,fit=crop,f=png/Aq2NJ23MzBH2rx2j/she-A0x4keRWN9FkzVg3.jpg" alt="Logo" style="width:100%; height:100%; object-fit:cover;">
+                        </div>
+                        <span style="font-size: 1.5rem; font-weight: 800;">She Can Foundation</span>
+                    </a>
+                    <p style="font-size: 0.9rem;">Empowering underprivileged women and raising wellness awareness. Registered under Indian Societies Act, 1860.</p>
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/company/shecanfoundation" class="social-btn" aria-label="LinkedIn">LN</a>
+                        <a href="https://www.instagram.com/_shecanfoundation_" class="social-btn" aria-label="Instagram">IG</a>
+                    </div>
+                </div>
+
+                <div class="footer-col reveal delay-100">
+                    <h4>Navigation</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">Our Story</a></li>
+                        <li><a href="initiatives.html">Our Campaigns</a></li>
+                        <li><a href="donate.html">Donate Today</a></li>
+                        <li><a href="join.html">Be a Volunteer</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col reveal delay-200">
+                    <h4>Contact Us</h4>
+                    <ul style="font-size: 0.9rem; color: var(--text-secondary); gap: 10px;">
+                        <li><strong>Email:</strong> president@shecanfoundation.org</li>
+                        <li><strong>Contact:</strong> +91-8283841830</li>
+                        <li><strong>Reg. Act:</strong> Act XXI of 1860</li>
+                    </ul>
+                </div>
+
+                <div class="footer-col reveal delay-300">
+                    <h4>Join Newsletter</h4>
+                    <p style="font-size: 0.85rem; margin-bottom: 16px;">Get updates on hygiene distribution drives and campaigns.</p>
+                    <form class="newsletter-form" id="newsletterForm" onsubmit="event.preventDefault(); alert('Subscribed to Newsletter!'); this.reset();">
+                        <input type="email" placeholder="Your Email" class="newsletter-input" required id="newsletterEmailInput">
+                        <button type="submit" class="btn btn-primary" style="padding: 10px 20px; font-size: 0.8rem;" id="newsletterSubmitBtn">Join</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="footer-bottom reveal">
+                <p>&copy; 2026 She Can Foundation. All rights reserved.</p>
+                <p>Govt. Registered NGO | Societies Registration Act, 1860</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Core Scripts -->
+    <script src="js/main.js"></script>
+</body>
+</html>

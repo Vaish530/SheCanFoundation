@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <script>
+        const savedTheme = localStorage.getItem('theme') || 'dark';
+        document.documentElement.setAttribute('data-theme', savedTheme);
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Be a Volunteer | She Can Foundation</title>
+    <meta name="description" content="Be a part of She Can Foundation. Contribute your time, skills, and ideas to make a real difference in the lives of underprivileged women.">
+    <!-- Favicon (Circular Logo) -->
+    <link rel="icon" type="image/jpeg" href="https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=32,h=32,fit=crop,f=png/Aq2NJ23MzBH2rx2j/she-A0x4keRWN9FkzVg3.jpg">
+    <link rel="apple-touch-icon" href="https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=180,h=180,fit=crop,f=png/Aq2NJ23MzBH2rx2j/she-A0x4keRWN9FkzVg3.jpg">
+    
+    <!-- CSS files -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/animations.css">
+    
+    <!-- Google Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Drifting Glassmorphic Background Blobs -->
+    <div class="blob-container">
+        <div class="bg-blob blob-1"></div>
+        <div class="bg-blob blob-2"></div>
+        <div class="bg-blob blob-3"></div>
+        <div class="bg-blob blob-4"></div>
+    </div>
+
+    <!-- GLOBAL NAVBAR -->
+    <header class="header scrolled" id="header" style="background-color: var(--navbar-bg); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); border-bottom: 1px solid var(--glass-border);">
+        <div class="container nav-container">
+            <a href="index.html" class="logo" id="logoLink">
+                <div class="logo-frame">
+                    <img src="https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=180,h=180,fit=crop,f=png/Aq2NJ23MzBH2rx2j/she-A0x4keRWN9FkzVg3.jpg" alt="She Can Foundation Logo" style="width: 100%; height: 100%; object-fit: cover;">
+                </div>
+                <span style="font-size: 2.0rem; font-size: clamp(1.4rem, 2.5vw, 2.0rem); font-weight: 800; white-space: nowrap;">She Can Foundation</span>
+            </a>
+
+            <nav class="nav-links" id="navLinks">
+                <a href="index.html" id="navHome">Home</a>
+                <a href="about.html" id="navAbout">Our Story</a>
+                <a href="initiatives.html" id="navInitiatives">Campaigns</a>
+                <a href="donate.html" id="navDonate">Donate</a>
+                <a href="join.html" class="active" id="navJoin">Join Us</a>
+            </nav>
+
+            <div class="nav-actions">
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode" id="themeToggleBtn">
+                    <svg class="sun-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364-6.364l-.707.707M6.343 17.657l-.707.707m2.828 0l-.707-.707M17.657 6.343l-.707-.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
+                    </svg>
+                    <svg class="moon-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
+                    </svg>
+                </button>
+                <a href="donate.html" class="btn btn-red btn-header" id="headerCtaBtn">Donate Now</a>
+                
+                <div class="mobile-nav-toggle" id="mobileNavToggle" aria-label="Menu menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- JOIN US INTRO HEADER -->
+    <section class="section-padding" style="padding-top: 220px; text-align: center;">
+        <div class="container" style="max-width: 800px;">
+            <span class="card-tag tag-gold reveal-scale">Join Our Team</span>
+            <h1 class="reveal-scale delay-100" style="font-size: 3rem; font-size: clamp(2rem, 5vw, 3.5rem); margin: 16px 0 24px;">
+                Be a Part of <span class="text-gradient">She Can</span>
+            </h1>
+            <p class="reveal-scale delay-200" style="font-size: 1.15rem; line-height: 1.8;">
+                At She Can Foundation, we are committed to creating positive change and empowering women. Join us today and contribute your time, skills, and ideas to make a real impact.
+            </p>
+        </div>
+    </section>
+
+    <!-- SPLIT DETAILS & REGISTRATION FORM -->
+    <section class="section-padding" style="padding-top: 20px;">
+        <div class="container" style="display: grid; grid-template-columns: 1fr 1.2fr; gap: 50px; align-items: start;">
+            <!-- Left Side: Volunteer info and roles -->
+            <div style="display: flex; flex-direction: column; gap: 30px; position: sticky; top: 100px;">
+                <div class="glass-card reveal-left" style="border-color: rgba(99, 102, 241, 0.25);">
+                    <h2 style="font-size: 1.8rem; margin-bottom: 20px; line-height: 1.2;">Why Join Us?</h2>
+                    <p style="font-size: 0.95rem; line-height: 1.6; color: var(--text-secondary); margin-bottom: 16px;">
+                        By joining our team, you will have the opportunity to make a real difference in the lives of women in need. Whether you are passionate about education, healthcare, or providing support, there is a place for you on our team.
+                    </p>
+                    <p style="font-size: 0.95rem; line-height: 1.6; color: var(--text-secondary); font-weight: 500; border-left: 3px solid var(--red); padding-left: 12px; margin-bottom: 16px;">
+                        She Can Foundation is registered under the Indian Society Act, 1860, and works tirelessly with local schools, volunteers, and municipal teams to verify operations and supply dignity resources.
+                    </p>
+                    <p style="font-size: 0.95rem; line-height: 1.6; color: var(--text-secondary);">
+                        At She Can Foundation, we believe that if we all do our part, there is no challenge too great to overcome.
+                    </p>
+                </div>
+
+                <div class="glass-card reveal-left delay-200" style="border-color: rgba(245, 158, 11, 0.25);">
+                    <h2 style="font-size: 1.8rem; margin-bottom: 20px; line-height: 1.2;">What You Can Do</h2>
+                    <ul style="display: flex; flex-direction: column; gap: 14px; font-size: 0.95rem;">
+                        <li style="display: flex; align-items: flex-start; gap: 12px;">
+                            <span style="color: var(--red); font-size: 1.2rem; font-weight: 700;">✓</span>
+                            <span><strong>Advocacy & Awareness:</strong> Raise awareness of women's issues and hygiene taboos.</span>
+                        </li>
+                        <li style="display: flex; align-items: flex-start; gap: 12px;">
+                            <span style="color: var(--red); font-size: 1.2rem; font-weight: 700;">✓</span>
+                            <span><strong>Outreach Support:</strong> Participate in on-ground pad distribution and health camps.</span>
+                        </li>
+                        <li style="display: flex; align-items: flex-start; gap: 12px;">
+                            <span style="color: var(--red); font-size: 1.2rem; font-weight: 700;">✓</span>
+                            <span><strong>Vocational Mentoring:</strong> Offer your skills, time, or digital knowledge to teach others.</span>
+                        </li>
+                        <li style="display: flex; align-items: flex-start; gap: 12px;">
+                            <span style="color: var(--red); font-size: 1.2rem; font-weight: 700;">✓</span>
+                            <span><strong>Fundraising Operations:</strong> Help secure resources to keep rural girls in school.</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Right Side: Interactive validation form -->
+            <div class="glass-card reveal-right" style="padding: 40px; border-color: rgba(99, 102, 241, 0.15);">
+                <h2 style="font-size: 2rem; margin-bottom: 8px;">Volunteer Sign Up</h2>
+                <p style="font-size: 0.9rem; color: var(--text-secondary); margin-bottom: 30px;">Help us make a difference. Fill out your details below.</p>
+                
+                <form id="joinForm" novalidate>
+                    <!-- Name Input -->
+                    <div class="form-group">
+                        <label for="name" class="form-label">Full Name</label>
+                        <div class="input-wrapper">
+                            <input type="text" id="name" class="form-input" placeholder="Aisha Sharma" required>
+                            <div class="error-message" id="nameError">
+                                <span>⚠️ Name must be at least 3 letters (letters & spaces only).</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Email Input -->
+                    <div class="form-group">
+                        <label for="email" class="form-label">Email Address</label>
+                        <div class="input-wrapper">
+                            <input type="email" id="email" class="form-input" placeholder="aisha@example.com" required>
+                            <div class="error-message" id="emailError">
+                                <span>⚠️ Please enter a valid email address.</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Role Select -->
+                    <div class="form-group">
+                        <label for="role" class="form-label">Area of Interest</label>
+                        <div class="input-wrapper">
+                            <select id="role" class="form-input" style="appearance: auto; cursor: pointer;" required>
+                                <option value="" disabled selected>Select an area of help</option>
+                                <option value="advocacy">Advocacy & Campaigns</option>
+                                <option value="outreach">On-ground Outreach Drives</option>
+                                <option value="training">Livelihood & Skills Tutoring</option>
+                                <option value="fundraising">Fundraising Operations</option>
+                            </select>
+                            <div class="error-message" id="roleError">
+                                <span>⚠️ Please select an area of interest.</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Message TextArea -->
+                    <div class="form-group">
+                        <label for="message" class="form-label">Your message or cover letter</label>
+                        <div class="input-wrapper">
+                            <textarea id="message" class="form-input" rows="5" maxlength="500" placeholder="Tell us how you would like to help (e.g. contributing Money, Skill or Time)..." required></textarea>
+                            <span class="char-counter" id="charCount">0/500</span>
+                            <div class="error-message" id="messageError">
+                                <span>⚠️ Message must be between 10 and 500 characters.</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Terms Checkbox -->
+                    <div class="form-checkbox-group">
+                        <input type="checkbox" id="terms" required>
+                        <label for="terms" style="font-size: 0.85rem; color: var(--text-secondary); cursor: pointer;">
+                            I confirm that the details provided are correct and I am ready to join She Can Foundation's efforts.
+                        </label>
+                    </div>
+                    <div class="error-message" id="termsError" style="margin-bottom: 24px; display: none;">
+                        <span>⚠️ You must agree to the terms to proceed.</span>
+                    </div>
+
+                    <!-- Submit Button -->
+                    <button type="submit" class="btn btn-red" style="width: 100%; height: 50px;" id="submitBtn">
+                        Submit Application
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ ACCORDION SECTION -->
+    <section class="section-padding" style="background-color: rgba(99, 102, 241, 0.01); border-top: 1px solid var(--glass-border);">
+        <div class="container" style="max-width: 800px;">
+            <div class="reveal-scale text-center" style="text-align: center; margin-bottom: 50px;">
+                <h2 style="font-size: 2.2rem; margin-bottom: 16px;">Frequently Asked <span class="text-gradient">Questions</span></h2>
+                <p>Find answers to common queries about volunteering at She Can Foundation.</p>
+            </div>
+
+            <div class="faq-accordion reveal">
+                <!-- FAQ Item 1 -->
+                <div class="faq-item" onclick="this.classList.toggle('active'); const ans=this.querySelector('.faq-answer'); if(this.classList.contains('active')){ans.style.maxHeight=ans.scrollHeight+'px'}else{ans.style.maxHeight='0'}">
+                    <button class="faq-question">
+                        <span>How can I contribute?</span>
+                        <span class="faq-icon">↓</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>We don't ask for much, just help us with what you can — Be it Money, Skill or Your Time. You can volunteer for on-ground distribution camps, write content, help manage campaigns, or support us through donations.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 2 -->
+                <div class="faq-item" onclick="this.classList.toggle('active'); const ans=this.querySelector('.faq-answer'); if(this.classList.contains('active')){ans.style.maxHeight=ans.scrollHeight+'px'}else{ans.style.maxHeight='0'}">
+                    <button class="faq-question">
+                        <span>Are there specific credentials required to join?</span>
+                        <span class="faq-icon">↓</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>No! We believe that talent and dedication should not be judged solely by experience. Every student and volunteer deserves a fair chance to contribute, learn, explore, and grow. All we look for is a shared passion for social change.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 3 -->
+                <div class="faq-item" onclick="this.classList.toggle('active'); const ans=this.querySelector('.faq-answer'); if(this.classList.contains('active')){ans.style.maxHeight=ans.scrollHeight+'px'}else{ans.style.maxHeight='0'}">
+                    <button class="faq-question">
+                        <span>Will I receive certificates for volunteering?</span>
+                        <span class="faq-icon">↓</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes. Volunteers who support our active campaigns receive verified Certificates of volunteering detailing their contributions and outreach hours.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SUCCESS MODAL POPUP -->
+    <div class="modal-overlay" id="successModal">
+        <div class="modal-card">
+            <div class="success-icon-wrapper">
+                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path class="checkmark-svg" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7" />
+                </svg>
+            </div>
+            <h3>Form Submitted Successfully!</h3>
+            <p>Thank you for signing up to volunteer at She Can Foundation. Our team coordinators will review your details and contact you via email within 3 working days.</p>
+            <button class="btn btn-primary" style="width: 100%;" id="closeModalBtn">Great, Thank You</button>
+        </div>
+    </div>
+
+    <!-- GLOBAL FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-info reveal">
+                    <a href="index.html" class="logo" style="margin-bottom: 16px;">
+                        <div style="width: 32px; height: 32px; border-radius: 50%; overflow: hidden; border: 1.5px solid var(--primary); display: flex; align-items: center; justify-content: center; background-color: #fff;">
+                            <img src="https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=180,h=180,fit=crop,f=png/Aq2NJ23MzBH2rx2j/she-A0x4keRWN9FkzVg3.jpg" alt="Logo" style="width:100%; height:100%; object-fit:cover;">
+                        </div>
+                        <span style="font-size: 1.5rem; font-weight: 800;">She Can Foundation</span>
+                    </a>
+                    <p style="font-size: 0.9rem;">Empowering underprivileged women and raising wellness awareness. Registered under Indian Societies Act, 1860.</p>
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/company/shecanfoundation" class="social-btn" aria-label="LinkedIn">LN</a>
+                        <a href="https://www.instagram.com/_shecanfoundation_" class="social-btn" aria-label="Instagram">IG</a>
+                    </div>
+                </div>
+
+                <div class="footer-col reveal delay-100">
+                    <h4>Navigation</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">Our Story</a></li>
+                        <li><a href="initiatives.html">Our Campaigns</a></li>
+                        <li><a href="donate.html">Donate Today</a></li>
+                        <li><a href="join.html">Be a Volunteer</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col reveal delay-200">
+                    <h4>Contact Us</h4>
+                    <ul style="font-size: 0.9rem; color: var(--text-secondary); gap: 10px;">
+                        <li><strong>Email:</strong> president@shecanfoundation.org</li>
+                        <li><strong>Contact:</strong> +91-8283841830</li>
+                        <li><strong>Reg. Act:</strong> Act XXI of 1860</li>
+                    </ul>
+                </div>
+
+                <div class="footer-col reveal delay-300">
+                    <h4>Join Newsletter</h4>
+                    <p style="font-size: 0.85rem; margin-bottom: 16px;">Get updates on hygiene distribution drives and campaigns.</p>
+                    <form class="newsletter-form" id="newsletterForm" onsubmit="event.preventDefault(); alert('Subscribed to Newsletter!'); this.reset();">
+                        <input type="email" placeholder="Your Email" class="newsletter-input" required id="newsletterEmailInput">
+                        <button type="submit" class="btn btn-primary" style="padding: 10px 20px; font-size: 0.8rem;" id="newsletterSubmitBtn">Join</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="footer-bottom reveal">
+                <p>&copy; 2026 She Can Foundation. All rights reserved.</p>
+                <p>Govt. Registered NGO | Societies Registration Act, 1860</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Core Scripts -->
+    <script src="js/main.js"></script>
+    <!-- Form Validation Script -->
+    <script src="js/validation.js"></script>
+</body>
+</html>
