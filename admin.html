@@ -66,15 +66,44 @@
             transform: translateY(-5px) !important;
         }
         html[data-theme="light"] .login-wrapper .glass-card {
-            background-color: rgba(255, 255, 255, 0.98) !important;
-            border: 1.5px solid #cbd5e1 !important;
-            box-shadow: 0 25px 50px rgba(15, 23, 42, 0.15), 0 10px 25px rgba(15, 23, 42, 0.08) !important;
+            background-color: #ffe4e6 !important; /* Solid Rose background fill */
+            border: 1.5px solid #fda4af !important;
+            box-shadow: 0 25px 50px rgba(225, 29, 72, 0.12), 0 10px 25px rgba(15, 23, 42, 0.08) !important;
             border-radius: 16px !important;
             backdrop-filter: none !important;
             -webkit-backdrop-filter: none !important;
         }
         html[data-theme="light"] .login-wrapper .glass-card:hover {
-            box-shadow: 0 35px 70px rgba(15, 23, 42, 0.22), 0 15px 35px rgba(15, 23, 42, 0.12) !important;
+            box-shadow: 0 35px 70px rgba(225, 29, 72, 0.18), 0 15px 35px rgba(15, 23, 42, 0.12) !important;
+        }
+        
+        /* Make text fully visible and readable on the rose glassmorphic card (light theme only) */
+        html[data-theme="light"] .login-wrapper .glass-card h2 {
+            color: #4c0519 !important; /* Deep rose maroon */
+            font-weight: 800 !important;
+        }
+        html[data-theme="light"] .login-wrapper .glass-card p {
+            color: #881337 !important; /* Dark rose */
+            font-weight: 600 !important;
+        }
+        html[data-theme="light"] .login-wrapper .glass-card .form-label {
+            color: #4c0519 !important; /* Deep rose maroon */
+            font-weight: 700 !important;
+        }
+        html[data-theme="light"] .login-wrapper .glass-card .form-input {
+            background-color: #ffffff !important;
+            border: 1.5px solid #fecdd3 !important; /* rose-200 */
+            color: #1e293b !important;
+        }
+        html[data-theme="light"] .login-wrapper .glass-card .form-input:focus {
+            border-color: #f43f5e !important; /* rose-500 */
+            box-shadow: 0 0 0 3px rgba(244, 63, 94, 0.15) !important;
+        }
+        html[data-theme="light"] .login-wrapper .glass-card .error-message {
+            background-color: #fff1f2 !important; /* rose-50 */
+            border-color: #f43f5e !important;
+            color: #9f1239 !important; /* rose-800 */
+            font-weight: 600 !important;
         }
         html[data-theme="dark"] .login-wrapper .glass-card {
             background-color: rgba(30, 41, 59, 0.98) !important;
